@@ -1,0 +1,178 @@
+$azul: #003862;
+$blanco: #ffffff;
+$transparencia: rgba(0,0,0,0.5);
+
+.descrip_producto{
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    display: flex;
+    align-items: center;
+        .carrusel{
+            width: 50%;
+            
+            .carousel-inner{
+                width: 100%;
+                height: 500px;
+
+                .carousel-item{
+                    width: 100%;
+                    height: 500px;
+                    img{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .control{
+                .icono{
+                    border-radius: 50%;
+                    background-color: $transparencia;
+                }
+            }
+        }
+        .descripcion-principal{
+            width: 50%;
+            padding: 5%;
+            h1{
+                color: $azul;
+                font-size: 3em;
+            }
+            h2{
+                font-size: 1em;
+                text-align: justify;
+            }
+        }
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    .tabla_descripcion{
+        border: 100px;
+        margin: 5% 30%;
+        font-size: 1.2em;
+        width: 100%;
+        tr{
+            width: 100%;
+            td{
+                padding-left: 30px;
+                text-align: start;
+                width: 50%;
+                font-size: 1.2em;
+                color: rgb(131, 130, 130);
+                font-family: 'Roboto', 'Russo One', sans-serif;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .descrip_producto{
+        display:block;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        .carrusel{
+            width: 90%;
+            margin: 30px 5%;
+            .carousel-inner{
+                height: 350px;
+                .carousel-item{
+                    height: 350px;
+                }
+            }
+        }
+        .descripcion-principal{
+            width: 90%;
+            margin: 10px 5%;
+            h1{
+                color: $azul;
+                font-size: 2em;
+                text-align: center;
+            }
+            h2{
+                font-size: 1em;
+                text-align: justify;
+                text-align: center;
+            }
+        }
+    }
+    .tabla{
+        .tabla_descripcion{
+            border: 100px;
+            margin: 5% 5%;
+            font-size: 0.8em;
+            width: 100%;
+            tr{
+                td{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 401px)and (max-width: 960px){
+    .descrip_producto{
+        width: 90%;
+        margin: 5% 5%;
+        .carrusel{
+            width: 60%;
+            .carousel-inner{
+                height: 300px;
+                .carousel-item{
+                    height: 300px;
+                }
+            }
+        }
+        .descripcion-principal{
+            width: 40%;
+            padding: 2%;
+            h1{
+                font-size: 2em;
+            }
+            h2{
+                font-size: 1em;
+            }
+        }
+    }
+    .tabla{
+        .tabla_descripcion{
+            border: 100px;
+            margin: 5% 20%;
+            font-size: 1em;
+            width: 100%;
+            tr{
+                td{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 961px){
+    .productos_top{
+        .productos_sugeridos{
+            display: grid;
+            padding: 3em 10em 3em 10em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4em;
+            .producto{
+                img{
+                    padding-top: 10px;
+                }
+                button{
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+    
+                button:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

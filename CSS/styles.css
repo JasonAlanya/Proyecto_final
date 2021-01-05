@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Imagen qdel background*/
+.imagenprincipal, .imagenprincipal img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+    margin-top: -38px;
+}
+
+/*Estilos para la portada*/
+.portada{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portada p{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    width: 35%;
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: #1204d9;
+    padding: 40px;
+    font-size: 3em;
+    font-family: 'Roboto', 'Russo One', sans-serif;
+}
+
+.texto-nosotros p{
+    color: #fff;
+}
+
+.texto-productos p{
+    color: #68e2d8;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*Estilos para los productos premium*/
+.productos_top{
+    background-color: #003862;
+}
+
+.texto-ubicanos p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.productos_top h1{
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', 'Russo One', sans-serif;
+}
+
+.cuadros-producto{
+    display: grid;
+    padding: 3em 10em 3em 10em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+}
+
+.producto{
+    background-color: #fff;
+    justify-content: center;
+    display: grid;
+    padding: 0 20%;
+}
+
+.producto:hover{
+    transform: translate(0, -10px);
+}
+
+.vector{
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.producto h2{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: #003862;
+}
+
+.producto img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.producto svg{
+    width: 4em;
+    height: 5em;
+}
+
+.producto g{
+    justify-content: center;
+}
+
+.producto path{
+    fill: #003862;
+}
+
+.producto button{
+    margin: 2em 0;
+    border: 0;
+    background-color: #003862;
+    padding: 0.5em 0;
+}
+
+.producto button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.producto a{
+    padding: 2em 2em;
+    height: 100vh;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilos para la ubicación*/
+.contacto{
+    display: flex;
+    background-color: #003862;
+}
+
+.mapa{
+    width: 50%;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.formulario{
+    width: 50%;
+    padding: 20px 40px;
+    display: grid;
+}
+
+.formulario div{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0.5em;
+}
+
+.formulario input, .formulario textarea{
+    padding: 1px 10px;
+    border-radius: 6px;
+    border: 3px solid #9ae726; 
+}
+
+.formulario input{
+    margin-top: 0.5em;
+}
+
+/*Pie de página*/
+.footer {
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    color: #003862;
+    padding-bottom: 1em
+}
+
+.footer figure, .footer div{
+    text-align: center;
+}
+
+.footer img{
+    width: 15%;
+    padding-top: 2em ;
+}
+
+.footer a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    padding: 0 1em;
+    color: #003862;
+}
+
+/*Estilos Responsive*/
+/*Mobile styles*/
+@media only screen and (max-width: 400px){
+    .portada{
+        height: 50vh;
+    }
+
+    .portada p{
+        width: 50%;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .productos_top h1{
+        font-size: 1.2em;
+    }
+
+    .cuadros-producto{
+        display: grid;
+        padding: 0.3em 1em 2em 1em;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .producto h2{
+        font-size: 1.5em;
+    }
+
+    .mision, .vision{
+        display: block;
+        background-color: #003862;
+        padding-bottom: 2em;
+    }
+    
+    .mision h1, .vision h1{
+        text-align: center;
+        color: #fff;
+        padding: 0.5em 0;
+    }
+
+    .mision h2, .vision h2{
+        text-align:justify;
+        color: #003862;
+        background-color: #fff;
+        margin: 0 1em;
+        padding: 1em;
+        border-radius: 1em;
+        font-size: 1.5em;
+    }
+
+    .contacto{
+        display: block;
+    }
+
+    .mapa{
+        width: 100%;
+        height: 500px;
+    }
+    .mapa iframe{
+        width: 100%;
+        height: 100%
+    }
+    .formulario{
+        width: 100%;
+        padding: 5vh 10%;
+        display: grid;
+    }
+    .footer img{
+        width: 40%;
+        padding-top: 2em ;
+    }
+
+    .derechos{
+        display: grid;
+    }
+}
+
+/*Tablet styles*/
+@media only screen and (min-width: 401px){
+    /*Visión*/
+    .vision, .mision{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #003862;
+    }
+
+    .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+
+    .vision .clip1{
+        background: #003862;
+        clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+        display: flex;
+        align-items: center;
+    }
+    .vision .clip1 h1{
+        width: 40%;
+        text-align: center;
+        font-size: 5em;
+        color: #fff;
+    }
+
+    .vision .clip2{
+        background: url(../imagenes/vision.jpg);
+        clip-path: polygon(55% 0, 100% 0%, 100% 100%, 20% 100%);
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision .clip2 h2{
+        display: none;
+        width: 35%;
+        position: absolute;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 40px;
+        font-size: 2em;
+        font-family: 'Roboto', 'Russo One', sans-serif;
+    }
+
+    /*Misión*/
+    .mision .clip3{
+        background: url(../imagenes/mision.jpg);
+        clip-path: polygon(0 0, 80% 0, 45% 100%, 0 100%);
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .mision .clip4 h1{
+        width: 40%;
+        text-align: center;
+        font-size: 5em;
+        color: #fff;
+    }
+
+    .mision .clip4{
+        background: #003862;
+        clip-path: polygon( 80% 0,100% 0, 100% 100%, 55% 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60%;
+    }
+
+    .mision .clip3 h2{
+        display: none;
+        width: 35%;
+        position: absolute;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 40px;
+        font-size: 2em;
+        font-family: 'Roboto', 'Russo One', sans-serif;
+    }
+}
+@media only screen and (min-width: 401px)and (max-width: 960px){
+    .portada{
+        height: 400px;
+    }
+
+    .portada p{
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    .productos_top h1{
+        font-size: 2em;
+    }
+
+    .cuadros-producto{
+        display: grid;
+        padding: 3em 4em 3em 4em;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .vision .clip1 h1, .mision .clip4 h1{
+        font-size: 3em;
+    }
+
+    .vision .clip2{
+        padding-left: 40%;
+    }
+
+    .vision .clip2 h2, .mision .clip3 h2{
+        display: flex;
+        font-size: 0.75em;
+        width: 50%;
+    }
+
+    .mision .clip3{
+        padding-right: 40%;
+    }
+}
+
+@media only screen and (min-width: 961px){
+    .vision:hover .clip2{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .vision:hover .clip2 h2{
+        animation-duration: 2s;
+        animation-name: aparecer;
+        display: flex;
+    }
+
+    .mision:hover .clip3{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .mision:hover .clip3 h2{
+        animation-duration: 2s;
+        animation-name: aparecer;
+        display: flex;
+    }
+}
+
+/*Animaciones*/
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
