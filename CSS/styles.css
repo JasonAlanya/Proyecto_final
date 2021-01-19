@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 /*Imagen qdel background*/
 .imagenprincipal, .imagenprincipal img{
@@ -9,7 +10,6 @@
     height: 100%;
     margin: 0;
     z-index: -1;
-    margin-top: -38px;
 }
 
 /*Estilos para la portada*/
@@ -195,14 +195,18 @@
 /*Estilos Responsive*/
 /*Mobile styles*/
 @media only screen and (max-width: 400px){
+    .portada_productos img{
+        width: auto;
+    }
+
     .portada{
         height: 50vh;
     }
 
     .portada p{
-        width: 50%;
+        width: 70%;
         padding: 20px;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .productos_top h1{
@@ -236,10 +240,10 @@
         text-align:justify;
         color: #003862;
         background-color: #fff;
-        margin: 0 1em;
+        margin: 0 2em;
         padding: 1em;
         border-radius: 1em;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .contacto{
@@ -360,6 +364,7 @@
         font-family: 'Roboto', 'Russo One', sans-serif;
     }
 }
+
 @media only screen and (min-width: 401px)and (max-width: 960px){
     .portada{
         height: 400px;
@@ -367,7 +372,7 @@
 
     .portada p{
         padding: 20px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .productos_top h1{
