@@ -194,7 +194,7 @@
 
 /*Estilos Responsive*/
 /*Mobile styles*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 420px){
     .portada_productos img{
         width: auto;
     }
@@ -204,9 +204,11 @@
     }
 
     .portada p{
-        width: 70%;
+        width: auto;
         padding: 20px;
+        margin: 0 10%;
         font-size: 1.3em;
+        color: #fff;
     }
 
     .productos_top h1{
@@ -227,7 +229,7 @@
     .mision, .vision{
         display: block;
         background-color: #003862;
-        padding-bottom: 2em;
+        padding-bottom: 1.8em;
     }
     
     .mision h1, .vision h1{
@@ -243,7 +245,7 @@
         margin: 0 2em;
         padding: 1em;
         border-radius: 1em;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .contacto{
@@ -274,7 +276,7 @@
 }
 
 /*Tablet styles*/
-@media only screen and (min-width: 401px){
+@media only screen and (min-width: 420px){
     /*Visión*/
     .vision, .mision{
         position: relative;
@@ -365,7 +367,7 @@
     }
 }
 
-@media only screen and (min-width: 401px)and (max-width: 960px){
+@media only screen and (min-width: 420px)and (max-width: 960px){
     .portada{
         height: 400px;
     }
