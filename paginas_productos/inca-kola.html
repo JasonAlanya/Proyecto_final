@@ -43,6 +43,7 @@
                     <a class="nav-item nav-link" href="../nosotros.html">Nosotros</a>
                     <a class="nav-item nav-link" href="../productos.html">Productos</a>
                     <a class="nav-item nav-link" href="../contactanos.html">Ubicanos</a>
+                    <a class="nav-item nav-link" href="../carrito.html">Carrito</a>
                 </div>
             </div>
         </nav>
@@ -63,7 +64,7 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../imagenes/productos/inca-kola-1.webp" alt="presentación en botella de inca kola de 500ml">
+                <img class="imagen" src="../imagenes/productos/inca-kola-1.webp" alt="presentación en botella de inca kola de 500ml">
               </div>
               <div class="carousel-item">
                 <img src="../imagenes/productos/inca-kola-2.webp" alt="presentación en botella de inca kola de 1L">
@@ -87,9 +88,11 @@
               <span class="icono carousel-control-next-icon"></span>
             </a>
         </div>
-        <div class="descripcion-principal">
-            <h1>Coca cola</h1>
+        <div id="lista_productos" class="descripcion-principal">
+            <h1 class="nombre">Coca cola</h1>
             <h2>Esta bebida es ideal para tomarla sola o combinada.</h2>
+            <p>Precio: S/<span class="precio">1.50</span></p>
+            <button class="agregar">Comprar</button>
         </div>
     </section>
     
@@ -145,5 +148,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../JS/carro.js"></script>
+    <script src="../JS/pedido.js"></script>
 </body>
 </html>

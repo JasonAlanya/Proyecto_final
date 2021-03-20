@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrito</title>
+    <link rel="icon" type="image/png" href="imagenes/logotipo.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logotipo.png" height="50px" alt="Logotipo principal de la empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Inicio</a>
+                    <a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-item nav-link" href="productos.html">Productos</a>
+                    <a class="nav-item nav-link" href="contactanos.html">Ubicanos</a>
+                    <a class="nav-item nav-link active" href="contactanos.html">Carrito<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Precio</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="carrito">
+            
+            </div>
+            <hr>
+            <div class="row shoppingCartItem">
+                <div class="col-5">
+                </div>
+                <div class="col-3">
+                    <div class="shopping-cart-price d-flex align-items-center h-100 pb-2 pt-2 border-bottom">
+                        <p class="mb-0">Operación Gravada</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 pb-2 pt-2 border-bottom">
+                        <p class="sub_total mb-0">S/ 0.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row shoppingCartItem">
+                <div class="col-5">
+                </div>
+                <div class="col-3">
+                    <div class="shopping-cart-price d-flex align-items-center h-100 pb-2 pt-2 border-bottom">
+                        <p class="mb-0">I. G. V. (18%)</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 pb-2 pt-2 border-bottom">
+                        <p class="igv mb-0">S/ 0.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row shoppingCartItem">
+                <div class="col-5">
+                </div>
+                <div class="col-3">
+                    <div class="shopping-cart-price d-flex align-items-center h-100 pb-2 pt-2">
+                        <p class="mb-0">TOTAL</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 pb-2 pt-2">
+                        <p class="total mb-0">S/ 0.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+
+
+        </div>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="JS/carro.js"></script>
+    <script src="JS/carrito.js"></script>
+    
+
+</body>
+
+</html>

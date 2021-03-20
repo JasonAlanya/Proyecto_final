@@ -36,6 +36,12 @@
   font-size: 1em;
   text-align: justify;
 }
+.agregar{
+  padding: 3%;
+  border-radius: 5px;
+  background: #003862;
+  color: white;
+}
 
 .tabla {
   display: flex;

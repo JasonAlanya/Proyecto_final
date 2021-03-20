@@ -43,6 +43,7 @@
                     <a class="nav-item nav-link" href="../nosotros.html">Nosotros</a>
                     <a class="nav-item nav-link" href="../productos.html">Productos</a>
                     <a class="nav-item nav-link" href="../contactanos.html">Ubicanos</a>
+                    <a class="nav-item nav-link" href="../carrito.html">Carrito</a>
                 </div>
             </div>
         </nav>
@@ -61,7 +62,7 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../imagenes/productos/yogurt_gloria1.webp" alt="Yogurt gloria de 1Kg de sabor fresa">
+                <img class="imagen" src="../imagenes/productos/yogurt_gloria1.webp" alt="Yogurt gloria de 1Kg de sabor fresa">
               </div>
               <div class="carousel-item">
                 <img src="../imagenes/productos/yogurt_gloria2.webp" alt="Yogurt gloria de 1Kg de sabor guanabana">
@@ -79,9 +80,11 @@
               <span class="icono carousel-control-next-icon"></span>
             </a>
         </div>
-        <div class="descripcion-principal">
-            <h1>Yogurt Gloria</h1>
+        <div id="lista_productos" class="descripcion-principal">
+            <h1 class="nombre">Yogurt Gloria</h1>
             <h2>Presentaciones perfectas para llevar en la lonchera, al colegio, la universidad o el trabajo.</h2>
+            <p>Precio: S/<span class="precio">5.50</span></p>
+            <button class="agregar">Comprar</button>
         </div>
     </section>
     
@@ -143,5 +146,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../JS/carro.js"></script>
+    <script src="../JS/pedido.js"></script>
 </body>
 </html>
