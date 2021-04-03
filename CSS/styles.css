@@ -145,10 +145,19 @@
     height: 100%;
 }
 
-.formulario{
+.contenedor_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 50%;
-    padding: 20px 40px;
+}
+
+.formulario{
+    width: 100%;
+    padding:10%;
     display: grid;
+    position: absolute;
 }
 
 .formulario div{
@@ -165,6 +174,25 @@
 
 .formulario input{
     margin-top: 0.5em;
+}
+
+.agradecimiento p{
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.agradecimiento button{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: #003862;
+    font-weight: bold;
+    border-color: teal;
 }
 
 /*Pie de página*/
@@ -264,6 +292,10 @@
         width: 100%;
         padding: 5vh 10%;
         display: grid;
+    }
+    .contenedor_form{
+        width: 100%;
+        height: 100vh;
     }
     .footer img{
         width: 40%;
@@ -405,6 +437,12 @@
     .mision .clip3{
         padding-right: 40%;
     }
+    .mapa{
+        height: 650px;
+    }
+    .formulario{
+        position: relative;
+    }
 }
 
 @media only screen and (min-width: 961px){
@@ -426,6 +464,9 @@
         animation-duration: 2s;
         animation-name: aparecer;
         display: flex;
+    }
+    .contenedor_form{
+        height: 100vh;
     }
 }
 

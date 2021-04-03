@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Imagen principal-->
@@ -63,17 +65,24 @@
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6210903178576!2d-75.20074270656568!3d-12.06957096508938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e97b2c915f1d9%3A0x43b67b23df40c1f1!2sJose%20Olaya%20748%2C%20Huancayo%2012002!5e0!3m2!1ses!2spe!4v1610815568289!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <form action="" class="formulario">
-            <div>Nombre</div>
-            <input type="text">
-            <div>Correo</div>
-            <input type="email">
-            <div>Teléfono</div>
-            <input type="tel">
-            <div>Mensaje</div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar formulario">
-        </form>
+        <div class="contenedor_form">
+            <form action="" class="formulario">
+                <div>Nombre</div>
+                <input type="text">
+                <div>Correo</div>
+                <input type="email">
+                <div>Teléfono</div>
+                <input type="tel">
+                <div>Mensaje</div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input class="enviar" type="submit" value="Enviar formulario">
+            </form>
+            <div class="agradecimiento">
+                <p>Gracias por su mensaje en breve nos contactaremos con usted</p>
+                <button>Enviar otro mensaje</button>
+            </div>
+        </div>
+        
     </section>
     <!--Sección para el pie de página-->
     <footer class="footer">
@@ -85,8 +94,8 @@
         </div>
     </footer>
     <!--Scripts para el bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/forms.js"></script>
 </body>
 </html>
