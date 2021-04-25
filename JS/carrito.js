@@ -4,6 +4,7 @@ cargarEventos();
 
 function cargarEventos(){
     document.addEventListener('DOMContentLoaded',compra.leerls());
+    document.addEventListener('click', (e)=>{compra.eliminarProducto(e)});
 }
 
 function total(){
@@ -21,10 +22,22 @@ function total(){
     sub_total[0].innerHTML = "S/ " + (p_total-(0.18*(p_total))).toFixed(2);
 }
 
-//recopilar_datos();
+window.onstorage = () =>{
+    compra.leerls();
+    total();
+    var cantidad=document.querySelectorAll('.shoppingCartItemQuantity');
+    cantidad.forEach(Element => Element.addEventListener('change', total));
+}
+
+function limpiar(){
+    localStorage.clear();
+    compra.leerls();
+    total();
+    var cantidad=document.querySelectorAll('.shoppingCartItemQuantity');
+    cantidad.forEach(Element => Element.addEventListener('change', total));
+}
+
 total();
 
-/*var cantidad=document.querySelectorAll('.shoppingCartItemQuantity');
-cantidad.forEach(Element => Element.addEventListener('change', total));*/
-
-$(".shoppingCartItemQuantity").change(total);
+var cantidad=document.querySelectorAll('.shoppingCartItemQuantity');
+cantidad.forEach(Element => Element.addEventListener('change', total));
